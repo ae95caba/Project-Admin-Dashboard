@@ -13,8 +13,8 @@
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 6fr;
     height: 100vh;
-    padding-left: 150px !important;
-    padding-right: 150px;
+    padding-left: 200px !important;
+    padding-right: 200px;
 }
 
 .sidebar{
@@ -35,7 +35,7 @@
     display:grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 3rem 1fr 3rem 1fr ;
-    background-color: bisque;
+    background-color: rgb(221, 218, 218);
 }
 
 .container>*{
@@ -58,6 +58,12 @@ li{
 
 .card{
     margin: 0px !important;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    padding-left: 10px;
+    padding-right:10px;
+    border-left: 5px solid orange;
 }
 
 
@@ -69,10 +75,11 @@ li{
     display:grid;
     grid-template-columns: 1fr 1fr ;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 10px !important;
-    border: 1px solid black;
+    gap: 15px !important;
+    
     place-content: center;
     padding: 10px;
+    padding-bottom: 40px;
 }
 
 
@@ -81,7 +88,11 @@ li{
 #projects-tittle{
     grid-column: 1/2;
     grid-row: 1/2;
-    color: blue !important;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+    margin-left: 15px;
+    
 }
 
 #announcement-tittle{
@@ -104,12 +115,34 @@ li{
     grid-row:4/5;
 }
 
-.projects > div{
-    background-color: white;
-    border-radius: 15px;
-}
+
 
 .announcements, .trendings {
     background-color: white;
     border-radius: 15px;
+}
+
+h2{
+    color: blue;
+    font-size: 1rem;
+
+}
+
+p{
+    font-size: 13px !important;
+    text-align: left;
+    color: grey;
+    
+}
+
+
+.icons{
+    position: absolute;
+    right: 15px;
+    bottom: 10px
+}
+
+.card>h2{
+    margin-top: 20px;
+    color: black;
 }
