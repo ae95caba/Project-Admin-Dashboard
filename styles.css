@@ -10,14 +10,16 @@
 
 body{
     
-    border: 120px solid orange;
+   
     display:grid;
+    height: 100vh;
+    width: 100vw;
 }
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr ;
-    
+    background-color: grey;
     padding-left: 200px !important;
     padding-right: 200px;
 }
@@ -36,7 +38,7 @@ body{
 .header{
     grid-column: 2/3;
     display: grid;
-    
+    background-color: white;
     
     
 }
